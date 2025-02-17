@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+            <h1 class="text-2xl">Dashboard</h1>
+            <div class="flex space-x-4">
+                <button class="bg-blue-700 px-4 py-2 rounded">Notifications</button>
+                <button class="bg-blue-700 px-4 py-2 rounded">Profile</button>
+            </div>
+        </header>
+        
+        <div class="flex flex-1">
+            <aside class="bg-gray-800 text-white w-64 p-4 hidden md:block">
+                <nav>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Profile</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Settings</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Logout</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main class="flex-1 p-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 shadow-sm rounded-lg">
+                        <h2 class="text-lg font-semibold mb-2">Statistics</h2>
+                        <p class="text-gray-700">Overview of recent activity.</p>
+                        <!-- Add your statistics charts or graphs here -->
+                    </div>
+                    <div class="bg-white p-4 shadow-sm rounded-lg">
+                        <h2 class="text-lg font-semibold mb-2">Messages</h2>
+                        <p class="text-gray-700">Recent conversations and notifications.</p>
+                        <!-- Add your messages list here -->
+                    </div>
+                    <div class="bg-white p-4 shadow-sm rounded-lg">
+                        <h2 class="text-lg font-semibold mb-2">Tasks</h2>
+                        <p class="text-gray-700">Pending tasks and deadlines.</p>
+                        <!-- Add your tasks list here -->
+                    </div>
+                    <div class="bg-white p-4 shadow-sm rounded-lg">
+                        <h2 class="text-lg font-semibold mb-2">Calendar</h2>
+                        <p class="text-gray-700">Upcoming events and appointments.</p>
+                        <!-- Add your calendar here -->
+                    </div>
+                    <div class="bg-white p-4 shadow-sm rounded-lg">
+                        <h2 class="text-lg font-semibold mb-2">Files</h2>
+                        <p class="text-gray-700">Recent uploads and documents.</p>
+                        <!-- Add your files list here -->
+                    </div>
+                    <div class="bg-white p-4 shadow-sm rounded-lg">
+                        <h2 class="text-lg font-semibold mb-2">Notes</h2>
+                        <p class="text-gray-700">Quick notes and reminders.</p>
+                        <!-- Add your notes here -->
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <footer class="bg-blue-600 text-white p-4 text-center">
+            <p>&copy; 2023 Your Company</p>
+        </footer>
+    </div>
+</body>
+</html>
